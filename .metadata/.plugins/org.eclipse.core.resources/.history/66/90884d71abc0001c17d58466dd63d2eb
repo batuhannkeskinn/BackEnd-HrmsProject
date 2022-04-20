@@ -1,0 +1,5 @@
+package kodlama.io.HrmsProject.business.absracts;
+
+public interface EmailService {
+	Result sendEmail(User user);
+}

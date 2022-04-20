@@ -1,0 +1,7 @@
+package kodlama.io.HrmsProject.business.absracts;
+
+import kodlama.io.HrmsProject.entities.concretes.Employee;
+
+public interface AuthService {
+	Result RegisterEmployee(Employee employee , String confirmPassword);
+}

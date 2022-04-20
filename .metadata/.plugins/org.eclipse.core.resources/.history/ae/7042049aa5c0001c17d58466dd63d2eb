@@ -1,0 +1,5 @@
+package kodlama.io.HrmsProject.dataAcces.absracts;
+
+public interface CityDao3 {
+
+}

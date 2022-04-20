@@ -1,0 +1,5 @@
+package kodlama.io.HrmsProject.entities.concretes;
+
+public class Employee {
+
+}

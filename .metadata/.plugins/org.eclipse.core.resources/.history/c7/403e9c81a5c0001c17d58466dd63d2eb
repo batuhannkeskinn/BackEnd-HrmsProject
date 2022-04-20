@@ -1,0 +1,12 @@
+package kodlama.io.HrmsProject.dataAcces.absracts;
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import kodlama.io.Hrmss.entities.concretes.Employee;
+
+public interface EmployeeDao extends JpaRepository<kodlama.io.HrmsProject.entities.concretes.Employee,Integer> {
+ 
+	Employee getByEmail(String mail);
+}
+

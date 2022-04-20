@@ -1,0 +1,52 @@
+package kodlama.io.HrmsProject.business.concretes;
+
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import kodlama.io.HrmsProject.business.absracts.EmployeeService;
+import kodlama.io.HrmsProject.core.utilities.result.Result;
+import kodlama.io.HrmsProject.dataAcces.absracts.EmployeeDao;
+
+
+@Service
+public class EmployeeManager implements EmployeeService {
+ private EmployeeDao employeeDao;
+	
+ public EmployeeManager(EmployeeDao employeeDao) {
+	
+	this.employeeDao = employeeDao;
+}
+
+	
+
+	@Override
+	public Result add(Employee employee) {
+		employeeDao.save(employee);
+		return new SuccessResult("Sistem personeli Ekleme Başarılı");
+	}
+
+	@Override
+	public Result update(Employee entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result delete(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<Employee> getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+@Override
+	public DataResult<List<Employee>> getAll() {
+		return new SuccessDataResult<List<Employee>>(employeeDao.findAll());
+	}
+}
+

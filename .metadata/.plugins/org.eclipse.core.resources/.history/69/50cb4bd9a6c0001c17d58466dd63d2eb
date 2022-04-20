@@ -1,0 +1,12 @@
+package kodlama.io.HrmsProject.business.absracts;
+
+
+import java.util.List;
+
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+
+
+
+public interface ConverLetterService extends BaseEntityService<ConverLetter> {
+DataResult<List<ConverLetter>> getAllByJobSeekerId(int JobSeekerId);
+}

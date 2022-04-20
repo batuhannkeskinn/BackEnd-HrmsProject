@@ -1,0 +1,61 @@
+package kodlama.io.HrmsProject.business.concretes;
+
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import kodlama.io.HrmsProject.business.absracts.EmployerService;
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+import kodlama.io.HrmsProject.core.utilities.result.SuccessDataResult;
+import kodlama.io.HrmsProject.dataAcces.absracts.EmployerDao;
+
+
+@Service
+public class EmployerManager implements EmployerService {
+	private EmployerDao employerdao;
+	
+	
+	@Autowired
+	public EmployerManager(EmployerDao employerdao) {
+		this.employerdao = employerdao;
+	}
+
+	@Override
+	public DataResult<List<Employer>> getAll() {
+		return new SuccessDataResult<List<Employer>>
+		(this.employerdao.findAll(),"Data listelendi");
+	}
+
+	@Override
+	public Result add(Employer employer) {
+		this.employerdao.save(employer);
+		return new SuccessResult("Ekleme Başarılı");
+	}
+
+	@Override
+	public DataResult<Employer> getByPhoneNo(String phoneNo) {
+		return employerdao.getByPhoneNo(phoneNo);
+	}
+
+	@Override
+	public Result update(Employer entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result delete(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<Employer> getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
+

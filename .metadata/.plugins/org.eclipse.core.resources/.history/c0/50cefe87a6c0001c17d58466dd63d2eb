@@ -1,0 +1,5 @@
+package kodlama.io.HrmsProject.business.check;
+
+public interface UserCheckService {
+
+}

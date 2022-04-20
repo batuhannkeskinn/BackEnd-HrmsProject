@@ -1,0 +1,36 @@
+package kodlama.io.HrmsProject.business.concretes;
+
+
+import java.util.List;
+
+import kodlama.io.HrmsProject.business.absracts.UserService;
+import kodlama.io.HrmsProject.core.dataAccess.UserDao;
+import kodlama.io.HrmsProject.core.entities.User;
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+import kodlama.io.HrmsProject.core.utilities.result.Result;
+
+
+
+public class UserManager implements UserService{
+	private UserDao userDao;
+	@Override
+	public DataResult<List<User>> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+
+	@Override
+	public DataResult<User> getByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<User> getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

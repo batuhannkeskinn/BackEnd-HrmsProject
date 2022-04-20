@@ -1,0 +1,17 @@
+package kodlama.io.HrmsProject.dataAcces.absracts;
+
+
+
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+import kodlama.io.HrmsProject.entities.concretes.JobSeeker;
+
+
+
+public interface JobSeekerDao extends JpaRepository<JobSeeker, Integer>{
+DataResult<JobSeeker> getByEmail(String email);
+DataResult<JobSeeker> getByIdentityNumber(String identityNumber);
+
+}

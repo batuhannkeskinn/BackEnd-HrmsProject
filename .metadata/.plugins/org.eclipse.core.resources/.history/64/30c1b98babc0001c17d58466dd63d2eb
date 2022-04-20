@@ -1,0 +1,15 @@
+package kodlama.io.HrmsProject.business.concretes;
+
+import org.springframework.stereotype.Service;
+
+public class EmailManager {
+	@Service
+	public class EmailManager implements EmailService {
+
+		@Override
+		public Result sendEmail(User user) {
+			return new SuccessResult(user.getEmail() + " adresine e-posta gönderildi.");
+		}
+
+	}
+}

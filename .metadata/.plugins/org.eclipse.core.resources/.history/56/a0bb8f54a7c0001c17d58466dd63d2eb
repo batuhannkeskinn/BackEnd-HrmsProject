@@ -1,0 +1,11 @@
+package kodlama.io.HrmsProject.business.absracts;
+
+import java.util.List;
+
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+
+public interface JobPositionService {
+	 DataResult<List<JobPosition>>getAll();
+	 Result add(JobPosition jobPosition);
+	 
+	}

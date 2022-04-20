@@ -1,0 +1,5 @@
+package kodlama.io.HrmsProject.core.dataAccess;
+
+public interface UserDao {
+
+}

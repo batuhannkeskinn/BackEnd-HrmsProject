@@ -1,0 +1,15 @@
+package kodlama.io.HrmsProject.business.absracts;
+
+import java.util.List;
+
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+import kodlama.io.HrmsProject.core.utilities.result.Result;
+import kodlama.io.HrmsProject.entities.concretes.Employer;
+
+public interface EmployerService extends BaseEntityService<Employer>{
+DataResult<List<Employer>> getAll();
+	Result add(Employer employer);
+	
+	DataResult<Employer> getByPhoneNo(String phoneNo);
+
+}

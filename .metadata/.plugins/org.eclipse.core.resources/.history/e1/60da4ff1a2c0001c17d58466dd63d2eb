@@ -1,0 +1,39 @@
+package kodlama.io.HrmsProject.entities.concretes;
+
+@Data
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
+@Table(name = "educations")
+public class Education {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id")
+	private int id;
+	
+   
+	@Column(name = "school_name")
+	private String schoolName;
+	
+	@Column(name = "department")
+	private String department;
+	
+   @Column(name= "degree")
+   private String degree;
+
+    @Column(name = "started_year")
+    
+    private LocalDate startedYear;
+
+    @Column(name = "graduated_year")
+    private LocalDate graduatedYear;
+    
+    @ManyToOne
+    @JoinColumn(name="cv_id")
+    private Cv cv;
+    
+    
+    
+}

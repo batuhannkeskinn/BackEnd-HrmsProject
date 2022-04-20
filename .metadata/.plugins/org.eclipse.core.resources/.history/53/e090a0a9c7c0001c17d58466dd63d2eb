@@ -1,0 +1,54 @@
+package kodlama.io.HrmsProject.business.concretes;
+
+import java.util.List;
+
+import kodlama.io.HrmsProject.business.absracts.UpdatedEmployerService;
+import kodlama.io.HrmsProject.core.utilities.result.DataResult;
+import kodlama.io.HrmsProject.core.utilities.result.Result;
+import kodlama.io.HrmsProject.dataAcces.absracts.UpdatedEmployerDao;
+import kodlama.io.HrmsProject.entities.concretes.UpdatedEmployer;
+
+public class UpdatedEmployerManager implements UpdatedEmployerService{
+	private UpdatedEmployerDao employerDao;
+	public UpdatedEmployerManager(UpdatedEmployerDao employerDao) {
+		super();
+		this.employerDao = employerDao;
+	}
+
+	@Override
+	public Result add(UpdatedEmployer entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result update(UpdatedEmployer entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Result delete(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<List<UpdatedEmployer>> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<UpdatedEmployer> getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public DataResult<UpdatedEmployer> getByEmployerId(int employerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

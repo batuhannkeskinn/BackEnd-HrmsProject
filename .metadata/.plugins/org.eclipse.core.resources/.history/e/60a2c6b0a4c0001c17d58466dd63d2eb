@@ -1,0 +1,5 @@
+package kodlama.io.HrmsProject.core.utilities.result;
+
+public class ErrorDataResult {
+
+}

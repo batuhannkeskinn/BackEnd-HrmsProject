@@ -1,0 +1,14 @@
+package kodlama.io.HrmsProject.dataAcces.absracts;
+
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface UserActivationDao extends JpaRepository<UserActivation, Integer>{
+	List<UserActivation> getByIsActivated(boolean isActivated);
+	UserActivation getByCode(String code);
+	UserActivation getByUser_Id(int userId);
+}
+

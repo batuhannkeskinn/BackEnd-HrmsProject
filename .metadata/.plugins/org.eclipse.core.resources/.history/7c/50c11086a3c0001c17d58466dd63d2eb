@@ -1,0 +1,10 @@
+package kodlama.io.HrmsProject.entities.concretes;
+
+public class JobPosition {
+
+	public static void main(String[] args) {
+		package kodlama.io.HrmsProject.entities.concretes;
+		
+	}
+
+}
