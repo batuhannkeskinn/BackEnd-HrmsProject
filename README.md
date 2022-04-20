@@ -1,3 +1,3 @@
 # HrmsProject
 Kodlama.io
-BackEnd HRMS Project
+BackEnd-Java HRMS Project
